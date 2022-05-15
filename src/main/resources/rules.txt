@@ -1,0 +1,4 @@
+# Here you can set the rules for your server
+# There is no formatting and no syntax, it's all up to you
+# Rember to remove this lines from your file
+

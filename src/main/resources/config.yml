@@ -1,0 +1,362 @@
+#
+#  ██╗  ██╗██╗   ██╗██████╗ ███████╗███████╗███████╗███████╗███╗   ██╗████████╗██╗ █████╗ ██╗     ███████╗
+#  ██║  ██║██║   ██║██╔══██╗██╔════╝██╔════╝██╔════╝██╔════╝████╗  ██║╚══██╔══╝██║██╔══██╗██║     ██╔════╝
+#  ███████║██║   ██║██████╔╝█████╗  ███████╗███████╗█████╗  ██╔██╗ ██║   ██║   ██║███████║██║     ███████╗
+#  ██╔══██║██║   ██║██╔══██╗██╔══╝  ╚════██║╚════██║██╔══╝  ██║╚██╗██║   ██║   ██║██╔══██║██║     ╚════██║
+#  ██║  ██║╚██████╔╝██████╔╝███████╗███████║███████║███████╗██║ ╚████║   ██║   ██║██║  ██║███████╗███████║
+#  ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝
+#
+#                         Made by Chiarchiaooo
+#
+#
+# set the plugin message prefix here
+prefix: "&d&lSomeServerMC &7➽ "
+#
+#
+#here you can set chat format groups, emojis
+chat-formats:
+#
+  #default chat format
+  default-format: "%playername% &8➽ &7%message%"
+  #when editing emoji remember to follow the format of the default ones, otherwise emojis won't work
+  #format: emoji-trigger , emoji
+  emojis:
+    - "<3 , &c❤&r"
+    - "[star] , &c★&r"
+    - "[sun] , &e☀&r"
+    - "[handright] , ☛&r"
+    - "[handleft] , ☚&r"
+    - "[death] , ☠&r"
+    - "[peace] , ☮&r"
+    - "[moon] , ☽&r"
+    - "[note] , ♫&r"
+    - "[cross] , ♰&r"
+    - "[flag] , ⚐&r"
+    - "[warning] , ⚠&r"
+    - "[lightning] , ⚡&r"
+    - "[star] , ⚽&r"
+    - "[sword] , ⚔&r"
+    - ":) , ☺&r"
+    - ":( , ☹&r"
+    - "[right] , »&r"
+    - "[left] , «&r"
+    - "[arrowright] , →&r"
+    - "[arrowleft] , ←&r"
+#
+#remember when creating groups to follow the examples below otherwise the plugin won't work
+#format:
+#  <group-name>:
+#    permission: "hubessentials.chat.group.<group-name>"
+#    format: "%playername% &8➽ &7%message%"
+#placeholders: %playername%: Player name, %messge%: the message sent by the player, papi is supported
+#
+  groups:
+    admin:
+      permission: "hubessentials.chat.group.admin"
+      format: "[ADMIN] %playername% &8➽ &7%message%"
+    mod:
+      permission: "hubessentials.chat.group.mod"
+      format: "[MOD] %playername% &8➽ &7%message%"
+#
+#
+#here you can set the command whitelist, similar to the chat-formats
+#remember when creating groups to follow the examples below otherwise the plugin won't work
+#since there is no checks if the command exists or not, made sure to write the command correctly
+#format:
+#  <group-name>:
+#    permission: "hubessentials.cmdblock.group.<group-name>"
+#      commands:
+#        - "/group-example"
+#        - "/group-example"
+#        - "/group-example"
+#
+#
+# here you can toggle useless modules and commands
+modules-enable:
+#
+#      [   Commands   ]
+#
+  #registers the /spawn command
+  spawn-cmd: true
+  #registers the /rules command
+  rules-cmd: true
+  #registers the /msg command
+  msg-cmd: true
+  #registers the /socialspy command
+  socialspy-cmd: true
+  #registers the /gm commands
+  gamemodes-cmd: true
+  #registers the /hubess vanish command
+  vanish-cmd: true
+  #registers the /hubess fly command
+  fly-cmd: true
+#
+#      [   Modules   ]
+#
+  #enables the chat module
+  chat: true
+  #enables the command whitelist module
+  cmd-block: true
+  #enables the scoreboard module (NOT WORKING)
+  scoreboard: true
+  #enabled the join-items module
+  join-leave: true
+  #enables the server selector gui
+  selector-gui: true
+#
+#
+#
+#
+cmd-blocker:
+  cmd-whitelist:
+    - "/example"
+    - "/example"
+    - "/example"
+  groups:
+    admin:
+      permission: "hubessentials.cmdblock.group.admin"
+      commands:
+        - "/admin-example"
+        - "/admin-example"
+        - "/admin-example"
+    mod:
+      permission: "hubessentials.cmdblock.group.mod"
+      commands:
+        - "/mod-example"
+        - "/mod-example"
+        - "/mod-example"
+#
+#
+#here you can set the scoreboard ( W.I.P )
+#scoreboard can be reloaded by reloading the plugin itself
+#colors, and papi are supported
+#to create a blank line use %blank%
+scoreboard: #NOT WORKING
+  title: "SomeServerMC"
+  lines:
+    - "coming soon..."
+    - "%blank%"
+    - "coming soon..."
+#
+#
+#here you can set the /spawn command
+#remember to follow the example below otherwise the command won't work
+#world name must be lowercase (if using default ones), pitch and yaw must have decimals (example: 10.0)
+spawn:
+  coords:
+    world: world
+    x: 0
+    y: 0
+    z: 0
+    pitch: 0.0
+    yaw: 0.0
+#
+#
+#here you can set titles and other stuff related to player / staffs joining or quitting the server
+join-leave:
+  #shows or not a title when a player / staff joins the server
+  title-enable: true
+  #here you can configure /vanish settings regarding player / staffs joining or quitting the server
+  vanish-settings:
+    #vanishes the staff member as soon as he joins the server
+    vanish-on-join: false
+    #unvanishes the staff member as soon as he disconnets the server
+    reveal-on-quit: false
+  #here you can configure the title when a player / staff joins the server, useless if disabled
+  title-settings:
+    #actual title, colors and papi are supported
+    title: "&b●&f●&b● &6&lSome Server&f&lMC &b●&f●&b●"
+    #title subtitle, colors and papi are supported
+    subtitle: "&7Welcome &3%player%"
+    #
+    #fade-in: duration in seconds of the title entrance animation (MUST BE INTEGER)
+    fade-in: 6
+    #title duration in seconds (MUST BE INTEGER)
+    duration: 5
+    #fade-out: duration in seconds of the title exiting animation (MUST BE INTEGER)
+    fade-out: 7
+#
+#here you can set hotbar items that the player / staff gets when he joins the server
+#remember to follow the example below, otherwise the plugin won't work
+#format:
+#    '<inventory slot>':
+#      material: <item material> (MUST BE UPPERCASE)
+#      quantity: <quantity, 1 to 64>
+#      enchanted: <true/false> -> if the item has the enchanted texture (enchants are hidden)
+#      unbreakable: <true/false> -> if the item is unbreakable (hidden)
+#      name: "<item name>"
+#      actions:
+#        - {command} <command> -> makes the player execute a command
+#        - {console} <command> -> executes a command as console
+#        - {message} <message> -> sends a message to the player, colors and papi are supported
+#        - {server} <server> -> sends the player to another server (REQUIRES A BUNGEECOORD/PROXY)
+#        - {bow-tp} -> teleport bow (teleport the player where the arrow lands)
+#        - {hide-others} -> allows a player to hide other players (for himself) in the lobby
+#      lore: -> item lore, colors and papi are supported
+#        - "line 1"
+#        - "line 2"
+#        - "line N"
+#
+  items:
+    '2':
+      material: BOW
+      quantity: 1
+      enchanted: true
+      unbreakable: true
+      name: "&b&lA Strange Bow"
+      actions:
+        - "{bow-tp}"
+      lore: []
+    '4':
+      material: COMPASS
+      quantity: 1
+      enchanted: false
+      unbreakable: true
+      name: "&6&lServer Selector"
+      actions:
+        - "{command} menu"
+      lore:
+        - "line 1"
+    '6':
+      material: LIME_DYE
+      quantity: 1
+      enchanted: true
+      unbreakable: true
+      name: "&7Hide Players"
+      actions:
+        - "{hide-others}"
+      lore: []
+#
+#
+#here you can set the name and lore of the hide-other-player item
+#An item with action " {hide-others} " and material LIME_DYE is needed to make this module working
+hide-others:
+  #set the item use cooldown (in seconds without decimals)
+  cooldown: 10
+  #set the item name when the other players are visible to the player
+  #hidden-player-item-name: "&7Hide Players"
+  #set the item name when the other players are invisible to the player
+  shown-player-item-name: "&aShow Players"
+  #toggle whenever or not staffs are allowed to hide other players (could mess with vanish)
+  staff-block-bypass: false
+  #set the item lore when the other players are visible to the player
+  hidden-item-lore:
+    - '&7&nTip: Right click'
+#
+  #set the item lore when the other players are invisible to the player
+  shown-item-lore:
+    - '&7&nTip: Right click'
+#
+#
+#
+#here you can set server selector gui items viewable with /menu
+#remember to follow the example below, otherwise the plugin won't work
+#format:
+#    '<gui slot>':
+#      item: <item material> (MUST BE UPPERCASE)
+#      name: "<item name>"
+#      lore: -> item lore, colors and papi are supported
+#        - "line 1"
+#        - "line 2"
+#        - "line N"
+#      enchanted: <true/false> -> if the item has the enchanted texture (enchants are hidden)
+#      actions:
+#        - {command} <command> -> makes the player execute a command
+#        - {console} <command> -> executes a command as console
+#        - {message} <message> -> sends a message to the player, colors and papi are supported
+#        - {action-bar} -> sends a message to the player on the action bar
+#        - {server} <server> -> sends the player to another server (REQUIRES A BUNGEECOORD/PROXY)
+#
+#to disable an item in the gui, set it to AIR, to disable the name, set it to "&c", to disable the lore or the commands set it to []
+#
+selector-gui:
+  #gui size, to calculate it you can do: <number of rows> * 9
+  #example: gui with 2 rows: 2 * 9 = 18
+  size: 54
+  #set the gui name, colors and papi are supported
+  name: "&aSome Server MC"
+  #set the item used to fill empty slots, set to AIR to disable it
+  empty-slot-item: GRAY_STAINED_GLASS_PANE
+  #here you can set the items in the gui, remember to start counting from 0 to the gui size you chose -1
+  slot:
+    '13':
+      item: REDSTONE
+      name: "&f⋆ &4&lFACTIONS &8[Season 69420]"
+      lore:
+        - ' '
+        - '&fCreate your faction and fight,'
+        - '&fGrind so you can conquer others'
+        - '&fAll the prizes and be always at top!'
+        - ' '
+        - '&cInformations:'
+        - ' &7◈ &7Version&8: &f1.7.10x &8/ &f1.8.x'
+        - ' &7◈ &7Status&8: &a%pinger_isonline_127.0.0.1:69420%'
+        - ' '
+        - '&8* &f&nClick to enter&f &8*'
+      enchanted: true
+      actions:
+        - "{message} &aTi mando nel Factions"
+        - "{server} factions"
+    '20':
+      item: IRON_SWORD
+      name: "&f⋆ &3&lKITPVP &8[1.0]"
+      lore:
+        - ' '
+        - '&fThrow yourself into the battle'
+        - '&fTo climb the leaderboards!'
+        - ' '
+        - '&bInformations:'
+        - ' &7◈ &7Version&8: &f1.7.x &8/ &f1.8.x'
+        - ' &7◈ &7Status&8: &aOnline'
+        - ' '
+        - '&8* &f&nClick to enter&f &8*'
+      enchanted: true
+      actions:
+        - "{message} &aTi mando nel KitPvP"
+        - "{server} kit"
+    '24':
+      item: GRASS_BLOCK
+      name: "&f⋆ &b&lCAPITAL&9&lCITY &8[1.0]"
+      lore:
+        - ' '
+        - '&fRoleplay'
+        - "&fHave fun finding you dream's job!"
+        - ' '
+        - '&bInformations:'
+        - ' &7◈ &7Version&8: &f1.12.2 &8/ &f1.18.2x'
+        - ' &7◈ &7Status&8: &a%pinger_isonline_127.0.0.1:69420%'
+        - ' '
+        - '&8* &f&nClick to enter&f &8*'
+    '31':
+      item: SHIELD
+      name: "&f⋆ &c&lMisteryDungeon &8[1.0]"
+      lore:
+        - ' '
+        - '&fDungeon custom'
+        - '&fHave fun with dragons!'
+        - ' '
+        - '&bInformations:'
+        - ' &7◈ &7Version&8: &f1.16.x &8/ &f1.18.x'
+        - ' &7◈ &7Status&8: &a%pinger_isonline_127.0.0.1:69420%'
+        - ' '
+        - '&8* &f&nClick to enter&f &8*'
+      enchanted: true
+      actions:
+        - "{message} &aTi mando nel Dungeon"
+        - "{server} Mistery"
+    '49':
+      item: PAPER
+      name: "&7(&b❂&7) &eSocials &7(&b❂&7)"
+      lore:
+        - '&b&lTG: &f@someserverMC'
+        - '&9&lDS: &fdiscord.someservermc.com'
+        - '&6&lwebsite: &fwww.someserver.com'
+      enchanted: true
+      actions: []
+#
+#
+#
+#
+# DO NOT TOUCH
+config-version: 1
+#

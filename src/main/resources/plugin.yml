@@ -1,0 +1,58 @@
+name: HubEssentials
+version: '1.0'
+main: it.chiarchiaooo.hubessentials.HubEssentials
+api-version: 1.18
+authors: [ Chiarchiaooo ]
+softdepend: [PlaceholderAPI]
+description: Simple Lobby plutin with some essential features
+
+commands:
+  hubessentials:
+    description: "Main command"
+    aliases: ["hubess","he"]
+  menu:
+    description: "Compass menu (configurable)"
+    aliases: ["compass","selector"]
+  rules:
+    description: "Shows the rules (edit them in the rules.txt file)"
+  spawn:
+    description: "Tp to spawn"
+  msg:
+    description: "Send private messages"
+    aliases: ["pmsg"]
+  socialspy:
+    description: "Spy on others chat"
+    aliases: ["ss"]
+  vanish:
+    description: "Makes you vanish"
+    aliases: ["v"]
+  fly:
+    description: "Toggle the fly"
+  gm:
+    description: "change gamemode"
+  gmc:
+    description: "Sets Creative mode"
+  gms:
+    description: "Sets Survival mode"
+  gmsp:
+    description: "Sets Spectator mode"
+
+
+
+permissions:
+  hubessentials.<sucommand>.command:
+    description: "Lets you use /hubess subcommands"
+  hubessentials.gamemode.<gamemode>:
+    description: "Lets you change your or someone else's gamemode to one that you/ him as perms for"
+  hubessentials.vanish.see:
+    description: "Shows other vanished staffs"
+  hubessentials.cmdblock.bypass.*:
+    description: "General commandblocker bypass permission"
+  hubessentials.cmdblock.group.<group>:
+    description: "Group-based command blocking"
+  hubessentials.chat.color:
+    description: "Permission to use colors in chat"
+  hubessentials.chat.emojis:
+    description: "Permission to use emojis in chat"
+  hubessentials.chat.group.<gropup>:
+    description: "Group-based chat formatting"

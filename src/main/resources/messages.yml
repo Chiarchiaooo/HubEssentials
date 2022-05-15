@@ -1,0 +1,90 @@
+#
+#  ███╗   ███╗███████╗███████╗███████╗ █████╗  ██████╗ ███████╗███████╗
+#  ████╗ ████║██╔════╝██╔════╝██╔════╝██╔══██╗██╔════╝ ██╔════╝██╔════╝
+#  ██╔████╔██║█████╗  ███████╗███████╗███████║██║  ███╗█████╗  ███████╗
+#  ██║╚██╔╝██║██╔══╝  ╚════██║╚════██║██╔══██║██║   ██║██╔══╝  ╚════██║
+#  ██║ ╚═╝ ██║███████╗███████║███████║██║  ██║╚██████╔╝███████╗███████║
+#  ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
+#
+#                         Made by Chiarchiaooo
+#
+#
+#
+#here you can set messages, colors and papi are supported
+#
+#            [   general messages   ]
+noarg: "&4&lError: &cone or more arguments are missing in the following command"
+noperms: "&cYou aren't allowed to do that."
+reload-msg: "%prefix% &aConfig reloaded successfully"
+item-cooldown: "%prefix% &cYou can't do this yet"
+player-not-found: "Player not found"
+unknown-command: "Unknown Command"
+reset-confirm-msg: "%prefix% &cAre you sure to reset the config? &7Type /hubess reset CONFIRM"
+#
+#
+#          [  game mode messages ]
+creative: "Creative"
+survival: "Survival"
+spectator: "Spectator"
+gamemode-changed: "%prefix% You changed your gamemode to %gamemode%"
+player-has-no-perms: "%prefix% &7%player%&c cannot use that gamemode"
+gamemode-not-found: "%prefix% &c The gamemode &7%gamemode%&c doesen't exist"
+#
+#
+#          [  join and leave messages ]
+join-msg: "&f(&a+&f) &6%player%"
+leave-msg: "&f(&c-&f) &6%player%"
+#
+#
+#                  [  msg message ]
+msg-format: "&c%player% &7➽ &c%addresser%&8: &7%message%"
+socialspy-format: "&6SS&7: &c%player% &7➽ &c%addresser%&8: &7%message%"
+cannot-message-self: "%prefix% &cYou cannot message yourself"
+socialspy-enabled: "%prefix% &7 You Enabled SocialSpy"
+socialspy-disabled: "%prefix% &7 You Disabled SocialSpy"
+socialspy-enabled-other: "%prefix% &7 You Enabled SocialSpy for &6%player%"
+socialspy-disabled-other: "%prefix% &7 You Enabled SocialSpy for &6%player%"
+socialspy-enabled-you: "%prefix% &7Someone enabled SocialSpy for you"
+socialspy-disabled-you: "%prefix% &7Someone disabled SocialSpy for you"
+
+#
+#
+#            [    vanish messages      ]
+vanish-msg: "%prefix% You are now invisible"
+reveal-msg: "%prefix% You are now visible"
+reveal-you: "%prefix% Someone made you visible"
+vanished-you: "%prefix% Someone made you invisible"
+reveal-other-msg: "%prefix% You have made %player% visible"
+vanish-other-msg: "%prefix% You have made %player% invisible"
+no-staff-vanished: "%prefix% &cNo Staff is currently vanished"
+vanish-list-msg-format: "%prefix% &6Vanished Staffs &7(%onlinecolor% %offlinecolor%&7): %list%"
+#
+#
+#           [    fly messages      ]
+enabled-fly: "%prefix% &6&lFly: &aEnabled"
+disabled-fly: "%prefix% &6&lFly: &cDisabled"
+self-fly-error: "%prefix% &cYou can't toggle fly for yourself"
+enabled-fly-you: "%prefix% &6&lFly: &aEnabled &6by &f%player%"
+disabled-fly-you: "%prefix% &6&lFly: &cDisabled &6by &f%player%"
+enabled-fly-other: "%prefix% &6&lFly: &aEnabled &6for &f%player%"
+disabled-fly-other: "%prefix% &6&lFly: &cDisabled &6for &f%player%"
+#
+#
+#           [    utils messages      ]
+plugin-loaded: "%prefix% &aPlugin &6%plugin%&a successfully loaded"
+plugin-reloaded: "%prefix% &aPlugin &6%plugin%&a successfully reloaded"
+plugin-unloaded: "%prefix% &aPlugin &6%plugin%&a successfully unloaded"
+plugin-not-found: "%prefix% &cPlugin &6%plugin%&a not found"
+plugin-self-error: "%prefix% &cHubEssentials is configured to ignore himself"
+plugin-already-loaded: "%prefix% &cPlugin &6%plugin%&a already loaded"
+#
+#
+#         [    hide-others messages      ]
+players-shown: "%prefix% &cYou shown other players"
+staffblock-msg: "%prefix%&c Staffs and OPs aren't allowed to do that"
+players-hidden: "%prefix% &cYou hidden other players"
+#
+#
+#DO NOT TOUCH
+config-version: 1
+#
