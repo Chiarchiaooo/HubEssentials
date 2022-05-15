@@ -109,5 +109,5 @@ If you like my content and you want to support what I do, consider donating to <
 
 ## Rating
 
-You can also check out the plugin on <a href=https://www.spigotmc.org/resources/hubessentials>spigotmc.org</a><br><br>
+You can also check out the plugin on <a href=https://www.spigotmc.org/resources/hubessentials.102016>spigotmc.org</a><br><br>
 
